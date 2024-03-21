@@ -1,7 +1,7 @@
 API DOC
 
-Retrieve a list of all files
-curl -i http://localhost:3000/files
+
+
 
 Retrieve a single file and its content, returned as JSON
 curl -X POST -H "Content-Type: application/json" -d '{"fileName":"example","data":{"key":"value"}}' http://localhost:3000/files
@@ -14,3 +14,11 @@ curl -X PUT -H "Content-Type: application/json" -d '{"data":{"key":"updated valu
 
 Delete a file
 curl -X DELETE http://localhost:3000/files/example
+
+Retrieve a list of all files:
+
+```bash
+curl -i http://localhost:3000/files
+```
+
+
